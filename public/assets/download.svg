@@ -1,0 +1,17 @@
+<!-- /public/assets/logo.svg -->
+<svg width="320" height="72" viewBox="0 0 320 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TM Thanka logo">
+  <defs>
+    <!-- Try to load nice web fonts; fall back to system fonts if offline -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&amp;family=Pacifico&amp;display=swap');
+      .monogram { font-family: 'Montserrat', 'Poppins', 'Arial Black', Arial, sans-serif; font-weight: 800; }
+      .script   { font-family: 'Pacifico', 'Brush Script MT', 'Segoe Script', cursive; }
+    </style>
+  </defs>
+
+  <!-- Monogram TM (bold, black) -->
+  <text class="monogram" x="8" y="50" font-size="44" fill="#000">TM</text>
+
+  <!-- Wordmark Thanka (cursive, black) -->
+  <text class="script" x="116" y="52" font-size="44" fill="#000">Thanka</text>
+</svg>
