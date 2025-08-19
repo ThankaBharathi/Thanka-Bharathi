@@ -1,58 +1,50 @@
-# Portfolio Website
+# Thanka Bharathi - Personal Portfolio
 
-This is a personal portfolio website built using Vite+React, Tailwind CSS, and Framer Motion to showcase my skills, projects, and experience.
+Welcome to my personal portfolio repository! 🚀\
+This project showcases my work, skills, and projects in a sleek, modern,
+and professional design.
 
-## Features
-- **Responsive Design** – Works on all screen sizes.
-- **Smooth Animations** – Powered by Framer Motion for interactive user experience.
-- **Dark Mode Support** – Stylish UI with light and dark theme toggling.
-- **Optimized Performance** – Efficient rendering and smooth navigation.
-- **SEO Friendly** – Optimized for better search engine visibility.
+## 🌐 Live Portfolio
 
-## Tech Stack
-- **Frontend:** React.js
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
+Check out my live portfolio here:
+[thanka-bharathi.vercel.app](https://thanka-bharathi.vercel.app/)
 
-## Installation & Setup
+## 🔗 Connect with Me
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/sathishk-dev/illustration-portfolio.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd illustration-portfolio
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Start the development server:
-   ```sh
-   npm run dev
-   ```
-   The app will be available at `http://localhost:3000/`.
+-   LinkedIn: [Thanka
+    Bharathi](https://www.linkedin.com/in/thankabharathi/)
+-   GitHub: [ThankaBharathi](https://github.com/ThankaBharathi)
 
-## Demo
-Check out the live demo of the portfolio website: [Live Demo](https://sk-illustration-portfolio.netlify.app/)
+## 📌 About This Portfolio
 
-## Deployment
-To deploy the portfolio website, you can use platforms like:
-- **Vercel**
-- **Netlify**
-- **GitHub Pages** (with additional configurations)
+This portfolio is built to highlight my expertise in Data Science, AI,
+Machine Learning, and Web Development.\
+It features my projects, achievements, and professional journey.
 
-## How to Contribute
-If you’d like to contribute or improve this project, feel free to fork the repository and submit a pull request.
+## ⚡ Features
 
-## 🙌 Show Your Support
-If you like this project, please star it and share it with your friends!
+-   Responsive and modern UI design\
+-   Showcases projects and case studies\
+-   Smooth animations and transitions\
+-   Integrated with GitHub and LinkedIn
 
-## Contact
-If you have any questions or suggestions, feel free to reach out via:
-- **Email:** sathish31102004@gmail.com
-- **LinkedIn:** [@sathishk-dev](https://linkedin.com/in/sathishk-dev)
+## 🚀 Deployment
 
----
-Made with ❤️ by Sathish Kumar.
+The portfolio is hosted live using **Vercel** for seamless performance.
+
+## 📂 Repository Structure
+
+-   `/src` - Source code\
+-   `/public` - Static assets\
+-   `package.json` - Project dependencies
+
+## 💡 Future Plans
+
+-   Add a blog section to share insights and learnings\
+-   Showcase more AI & ML projects\
+-   Implement multilingual support
+
+------------------------------------------------------------------------
+
+⭐ If you like this portfolio, feel free to star this repo and connect
+with me!
