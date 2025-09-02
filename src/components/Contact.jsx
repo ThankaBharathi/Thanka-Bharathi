@@ -36,72 +36,99 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className='lg:w-[40%]'
         >
-          <form className='w-full space-y-3 lg:space-y-5'>
-            <input className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full' type="text" placeholder='Your name' required />
-            <input className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full' type="email" placeholder='Email' required />
-            <input className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full' type="text" placeholder='Your website (If exists)' />
-            <textarea className='resize-none border-2 px-5 py-3 h-32 border-black placeholder:text-[#71717A] rounded text-sm w-full' placeholder='How can I help?*'></textarea>
+          <form
+  action="https://formspree.io/f/xrbaaken"   // 🔹 Replace with your Formspree endpoint
+  method="POST"
+  className='w-full space-y-3 lg:space-y-5'
+>
+  <input
+    className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full'
+    type="text"
+    name="name"
+    placeholder='Your name'
+    required
+  />
+  <input
+    className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full'
+    type="email"
+    name="email"
+    placeholder='Email'
+    required
+  />
+  <input
+    className='border-2 px-5 py-3 border-black rounded placeholder:text-[#71717A] text-sm w-full'
+    type="text"
+    name="website"
+    placeholder='Your website (If exists)'
+  />
+  <textarea
+    className='resize-none border-2 px-5 py-3 h-32 border-black placeholder:text-[#71717A] rounded text-sm w-full'
+    name="message"
+    placeholder='How can I help?*'
+    required
+  ></textarea>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-              transition={{ duration: 0.8 }}
-              className='flex justify-between gap-3 lg:gap-5 flex-col lg:flex-row'
-            >
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                type='submit'
-                className='bg-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-white px-3 py-2 rounded flex items-center gap-x-3 font-medium'
-              >
-                Get In Touch
-              </motion.button>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0 }}
+    transition={{ duration: 0.8 }}
+    className='flex justify-between gap-3 lg:gap-5 flex-col lg:flex-row'
+  >
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      type='submit'
+      className='bg-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-white px-3 py-2 rounded flex items-center gap-x-3 font-medium'
+    >
+      Get In Touch
+    </motion.button>
 
-              {/* Social Links */}
-              <div className='flex items-center gap-x-2 lg:gap-x-5'>
-                <motion.a
-                  href="mailto:thankabharathi0@gmail.com"
-                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
-                </motion.a>
+    {/* Social Links */}
+    <div className='flex items-center gap-x-2 lg:gap-x-5'>
+      <motion.a
+        href="mailto:thankabharathi0@gmail.com"
+        className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+        whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <BiLogoGmail className="w-4 h-4 lg:w-5 lg:h-5" />
+      </motion.a>
 
-                <motion.a
-                  href="https://www.linkedin.com/in/thankabharathi/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
-                </motion.a>
+      <motion.a
+        href="https://www.linkedin.com/in/thankabharathi/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+        whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <IoLogoLinkedin className="w-4 h-4 lg:w-5 lg:h-5" />
+      </motion.a>
 
-                <motion.a
-                  href="https://x.com/ThankaBharathi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <IoLogoTwitter className="w-4 h-4 lg:w-5 lg:h-5" />
-                </motion.a>
+      <motion.a
+        href="https://x.com/ThankaBharathi"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+        whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <IoLogoTwitter className="w-4 h-4 lg:w-5 lg:h-5" />
+      </motion.a>
 
-                <motion.a
-                  href="https://github.com/ThankaBharathi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
-                </motion.a>
-              </div>
-            </motion.div>
-          </form>
+      <motion.a
+        href="https://github.com/ThankaBharathi"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+        whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <BsGithub className="w-4 h-4 lg:w-5 lg:h-5" />
+      </motion.a>
+    </div>
+  </motion.div>
+</form>
+
         </motion.div>
 
         {/* Right Side (Text + Email + Phone) */}
